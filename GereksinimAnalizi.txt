@@ -1,0 +1,21 @@
+PROJENİN AMACI 
+
+C# kullanılarak bir cafe otomasyonu oluşturmak hedeflenmiştir.
+Cafe çalışanlarının kullanabileceği farklı arayüzler oluşturulmalıdır.
+Bu arayüzler kullanımı kolay olması amacı ile oldukça basit tutulmaya çalışılmalıdır.
+
+GEREKSİNİM ANALİZİ
+Gereksinimler değişebileceği için iterative proje geliştirme yöntemi kullanılmıştır.
+1-Çalışanlar veri tabanında ad, soyad, telefon no ile tutulur ve yeni eklemeler oradan yapılır.
+2-İçecek tablosu:İçecek adı ve fiyat bilgisini tutar.
+3-Yiyecek tablosu:Yiyecek adı ve fiyat bilgisini tutar. 
+4-Yeni içecek ve yemek ekleme: Veritabanında değişiklik yapabilen girişler belirlenmelidir.
+5-Ürün Fiyatları: Hangi ürünün ne kadar ücretlendirileceği veri tabanından sisteme otomatik girilecektir.
+6-Ödeme tablosu: Ödenecek tutarı ve hangi çalışanın bu siparişi aldığını tutar.
+
+PROJENİN AÇIKLANMASI
+Her yerden veritabanına erişimi engellemek için veritabanı için ayrı class oluşturulmalı ve bu classı private ederek encapsulation yapılmalıdır.
+Sadece sipariş alımı yapılarak giriş ekranında gerekli listeler sunulmalıdır.Böylece sipariş alımı garsonlar için de basit hale getirilmiş olur.
+İstenilenler işaretlendikten sonra otomatik yapılan ücret belirleme işlemi sonrası,her masanın ne kadar ödeyeceği belirlenir.
+Eğer tekrar bir ekleme yapılacaksa aynı masa numarası garson tarafından seçilerek gerekli ekleme yapılır ve toplam ücret güncellenir.
+Bütün işlemler sonucunda boş kalan masa için ücret sıfırlanır.
